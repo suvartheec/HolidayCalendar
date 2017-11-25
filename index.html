@@ -7,10 +7,12 @@
     var OneSignal = window.OneSignal || [];
     OneSignal.push(["init", {
       appId: "f7ae9bee-3601-4b5f-9869-71074fe11e16",
-      autoRegister: false,
+      autoRegister: true,
       notifyButton: {
-        enable: true /* Set to false to hide */
-      }
+        enable: false /* Set to false to hide */
+      },
+      path: '/HolidayCalendar/', /* A trailing slash is required */
+      
     }]);
   </script>
     <title>Holiday Calendar</title>
