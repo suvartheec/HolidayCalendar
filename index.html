@@ -1,23 +1,41 @@
-
 <html>
-  <head> 
-    <link rel="manifest" href="/manifest.json">
+<head>
+  <link rel="manifest" href="/manifest.json">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap-datepicker3.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script type="text/javascript" src="js/angular.js"></script>
+  <script type="text/javascript" src="js/jquery-1.12.4.js"></script>
+  <script type="text/javascript" src="js/bootstrap-datepicker.js"></script>
+ <!--  <script type="text/javascript" src="js/jquery-ui.js"></script> -->
+  <script type="text/javascript" src="js/ngStorage.js"></script>
   <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async></script>
+
   <script>
     var OneSignal = window.OneSignal || [];
     OneSignal.push(["init", {
-      appId: "f7ae9bee-3601-4b5f-9869-71074fe11e16",
-      autoRegister: true,
+      appId: "YOUR_APP_ID",
+      autoRegister: false,
       notifyButton: {
-        enable: false /* Set to false to hide */
+        enable: true /* Set to false to hide */
       }
-     /* path: '/HolidayCalendar/', /* A trailing slash is required */
-      
     }]);
   </script>
-    <title>Holiday Calendar</title>
-  </head>
-  <body>
-    <h1>This is Sample</h1>
-  </body>
+  <title>Holiday.cal</title>
+</head>
+Hello, welcome to Holiday.cal
+<br/>
+<div id="datepicker"></div>
+
+</body>
+<script type="text/javascript">
+    $('#datepicker').datepicker({
+        maxViewMode: 1,
+        todayBtn: "linked",
+        orientation: "bottom left",
+        keyboardNavigation: false,
+        daysOfWeekDisabled: "0",
+        todayHighlight: true,
+        toggleActive: true
+    });
+</script>
 </html>
