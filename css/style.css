@@ -14,6 +14,7 @@ body{
 	color: white !important;
 	background-attachment: fixed;
 	font-size: 20px; 
+	max-width: 700px;
 }
 .datepicker-inline {
 	margin: 2em auto !important;
